@@ -33,7 +33,7 @@ export function createEchoVercelAIGateway(
     name: 'vercel-ai-gateway',
     baseURL: options?.gatewayBaseURL ?? baseRouterUrl,
     headers: {
-      'x-api-key': 'placeholder_replaced_by_echoFetch',
+      'x-echo-app-id': appId,
     },
     fetch: echoFetch(
       fetch,
